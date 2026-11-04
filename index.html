@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>جهود الجامعة الإسلامية بالمدينة المنورة في التحذير من الجماعات والأحزاب</title>
+<title>هيكل رسالة الدكتوراه</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body>
 <style>
-/* Layout: عمود واحد رأسي، ترويسة داكنة فيها شريط التقدّم، ثم شريط تنقّل لاصق، ثم بطاقات منفصلة، اتجاه RTL */
+/* Layout: ترويسة داكنة، شريط تنقّل لاصق، بطاقات منفصلة، اتجاه RTL */
 :root {
   --bg: #EEF2F0;
   --surface: #FFFFFF;
@@ -25,14 +25,6 @@
   --hero-ink: #F2F6F4;
   --hero-soft: #B9D0CA;
   --hero-gold: #D9B866;
-  --st-todo: #8C9C98;
-  --st-writing: #B7791F;
-  --st-review: #2F6FB3;
-  --st-done: #1E8A5E;
-  --hst-todo: rgba(255,255,255,.22);
-  --hst-writing: #E0B84F;
-  --hst-review: #7FB6E8;
-  --hst-done: #62C79A;
   --font-display: "Amiri", "Traditional Arabic", "Times New Roman", serif;
   --font-body: "Noto Naskh Arabic", "Segoe UI", Tahoma, "Geeza Pro", sans-serif;
   color-scheme: light;
@@ -50,10 +42,6 @@
     --accent-soft: #1C3833;
     --gold: #D9B866;
     --hero-bg: #0A2824;
-    --st-todo: #6C807B;
-    --st-writing: #E0B84F;
-    --st-review: #7FB6E8;
-    --st-done: #62C79A;
     color-scheme: dark;
   }
 }
@@ -69,10 +57,6 @@
   --accent-soft: #1C3833;
   --gold: #D9B866;
   --hero-bg: #0A2824;
-  --st-todo: #6C807B;
-  --st-writing: #E0B84F;
-  --st-review: #7FB6E8;
-  --st-done: #62C79A;
   color-scheme: dark;
 }
 
@@ -138,29 +122,6 @@ body::before {
 .researcher { margin-top: 22px; display: flex; flex-direction: column; align-items: center; }
 .researcher small { font-size: .85rem; color: var(--hero-soft); }
 .researcher strong { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; }
-
-/* شريط التقدّم في الترويسة */
-.progress { width: 100%; max-width: 520px; margin-top: 28px; display: flex; flex-direction: column; gap: 8px; text-align: right; }
-.pl { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: .95rem; color: var(--hero-soft); }
-.pl strong { color: var(--hero-ink); font-weight: 600; }
-.bar { display: flex; gap: 4px; height: 8px; }
-.bar span { flex: 1; border-radius: 4px; background: var(--hst-todo); transition: background .3s; }
-.bar .st-writing { background: var(--hst-writing); }
-.bar .st-review { background: var(--hst-review); }
-.bar .st-done { background: var(--hst-done); }
-.legend { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: .85rem; line-height: 1.7; }
-.legend li { display: inline-flex; align-items: center; gap: 6px; }
-.hero .legend { color: var(--hero-soft); }
-.hero .legend .dot { --c: var(--hst-todo); }
-.hero .legend .st-writing { --c: var(--hst-writing); }
-.hero .legend .st-review { --c: var(--hst-review); }
-.hero .legend .st-done { --c: var(--hst-done); }
-
-.dot { width: 10px; height: 10px; border-radius: 50%; flex: none; display: inline-block; --c: var(--st-todo); background: var(--c); }
-.dot.st-todo { background: transparent; border: 2px solid var(--c); }
-.dot.st-writing { --c: var(--st-writing); }
-.dot.st-review { --c: var(--st-review); }
-.dot.st-done { --c: var(--st-done); }
 
 /* شريط التنقّل اللاصق */
 .nav {
@@ -229,90 +190,82 @@ main {
 .card p { margin: 0; text-wrap: pretty; }
 .lead { color: var(--ink-soft); margin-bottom: 14px !important; }
 .hint { color: var(--ink-soft); font-size: .92rem; line-height: 1.8; margin-bottom: 14px !important; }
-.sync { color: var(--st-writing); font-size: .92rem; margin-bottom: 12px !important; }
 
-/* أجزاء الدراسة القابلة للتوسعة */
+/* بطاقة معلومات الرسالة */
+.facts { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; margin: 0; }
+.facts div { display: grid; grid-template-columns: minmax(0, 8rem) minmax(0, 1fr); gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.facts div:last-child { border-bottom: 0; }
+.facts dt { color: var(--ink-soft); font-size: .95rem; }
+.facts dd { margin: 0; overflow-wrap: anywhere; }
+
+/* فصول الرسالة القابلة للتوسعة */
 .parts { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
 .part { background: var(--surface-soft); border: 1px solid var(--line); border-radius: 8px; min-width: 0; scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 64px); }
 .part summary {
   list-style: none;
   cursor: pointer;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 6px 12px;
+  gap: 12px;
   padding: 14px 18px;
 }
 .part summary::-webkit-details-marker { display: none; }
 .part details[open] > summary { border-bottom: 1px solid var(--line); }
-.ttl { flex: 1 1 14rem; min-width: 0; display: flex; flex-direction: column; }
+.ttl { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; }
 .tag { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--gold); }
 .txt { overflow-wrap: anywhere; }
-.meta { display: inline-flex; align-items: center; gap: 10px; margin-inline-start: auto; }
-.cnt { font-size: .85rem; color: var(--ink-soft); }
-.pill {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-size: .85rem; line-height: 1.7; padding: 1px 10px;
-  border: 1px solid var(--line); border-radius: 999px;
-  color: var(--ink-soft); background: var(--surface);
-}
 .chev {
   width: 8px; height: 8px; flex: none;
   border-left: 2px solid var(--ink-soft); border-bottom: 2px solid var(--ink-soft);
   transform: rotate(-45deg); margin-bottom: 4px; transition: transform .2s;
 }
 .part details[open] .chev { transform: rotate(135deg); margin-bottom: -4px; }
-.body { padding: 16px 18px 20px; display: flex; flex-direction: column; gap: 18px; }
-.body h3 { margin: 0 0 6px; font-size: 1rem; font-weight: 700; color: var(--ink); }
-.ctl { display: flex; flex-direction: column; gap: 6px; }
-.seg { display: flex; flex-wrap: wrap; gap: 8px; }
-.seg button, .btn {
-  font: inherit; font-size: .95rem; line-height: 1.6;
-  min-height: 40px; padding: 4px 14px;
-  border-radius: 8px; border: 1px solid var(--line);
-  background: var(--surface); color: var(--ink); cursor: pointer;
-}
-.seg button[aria-pressed="true"], .btn { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
-.seg button:hover:not([aria-pressed="true"]) { background: var(--accent-soft); }
-.items { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
-.items li { display: flex; align-items: center; gap: 10px; min-width: 0; }
-.items input[type="checkbox"] { width: 20px; height: 20px; flex: none; accent-color: var(--accent); }
-.items .t { flex: 1; min-width: 0; overflow-wrap: anywhere; }
-.items .done .t { color: var(--ink-soft); text-decoration: line-through; }
-.items .rm { font: inherit; width: 36px; height: 36px; border: 0; background: transparent; color: var(--ink-soft); font-size: 1.3rem; cursor: pointer; border-radius: 8px; }
-.items .rm:hover { background: var(--accent-soft); color: var(--ink); }
-.empty { color: var(--ink-soft); font-size: .92rem; }
-.add { display: flex; gap: 8px; margin-top: 10px; }
-.add input, .nt textarea {
-  font: inherit; font-size: .98rem; width: 100%; min-width: 0;
-  background: var(--surface); color: var(--ink);
-  border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px;
-}
-.add input { flex: 1; }
-.nt label { display: block; font-weight: 700; font-size: 1rem; margin-bottom: 6px; }
-.nt textarea { resize: vertical; line-height: 1.8; }
+.part .ph { display: flex; align-items: center; gap: 12px; padding: 14px 18px; }
+.part .body p { color: var(--ink); }
 
-/* مخطط البنية */
-.figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 14px; }
-.dg { width: 100%; max-width: 440px; height: auto; display: block; }
-.dg text { fill: var(--ink); font-family: var(--font-body); }
-.dg .tg { font-size: 12px; fill: var(--ink-soft); }
-.dg .lb { font-size: 14px; font-weight: 600; }
-.dg .rt { fill: var(--hero-ink); font-family: var(--font-display); font-size: 16px; font-weight: 700; }
-.dg .rb { fill: var(--hero-bg); }
-.dg .nb { fill: var(--surface-soft); stroke: var(--line); stroke-width: 1; }
-.dg .nb.dash { stroke-dasharray: 5 4; fill: transparent; }
-.dg .tr { stroke: var(--line); stroke-width: 2; }
-.dg .dn { cursor: pointer; }
-.dg .dn:hover .nb, .dg .dn:focus-visible .nb { stroke: var(--accent); stroke-width: 2; }
-.dg .dn:focus-visible { outline: none; }
-.dg .nd { fill: var(--st-todo); stroke: var(--surface); stroke-width: 2; }
-.dg .nd.st-writing { fill: var(--st-writing); }
-.dg .nd.st-review { fill: var(--st-review); }
-.dg .nd.st-done { fill: var(--st-done); }
-.dg .nd.hollow { fill: var(--surface); stroke: var(--st-todo); }
-.figure figcaption { color: var(--ink-soft); font-size: .92rem; text-align: center; max-width: 34rem; }
-.figure .legend { justify-content: center; color: var(--ink-soft); }
+/* الخريطة الذهنية */
+.mm { display: flex; flex-direction: column; gap: 16px; }
+.mm-root {
+  align-self: center;
+  max-width: 100%;
+  padding: 14px 22px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  text-align: center;
+  text-wrap: balance;
+}
+.mm-row { display: grid; grid-template-columns: minmax(0, 9rem) minmax(0, 1fr); gap: 12px; align-items: start; }
+.mm-main {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.7;
+}
+.mm-subs { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; min-width: 0; }
+.mm-sub {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface-soft);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: .95rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.mm-sub:hover, .mm-main:hover { border-color: var(--accent); }
+.mm-sub small { color: var(--ink-soft); font-size: .85rem; margin-inline-start: 4px; }
 
 /* القوائم المرقّمة */
 .numbered { list-style: none; counter-reset: n; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
@@ -331,16 +284,15 @@ footer { text-align: center; color: var(--ink-soft); font-size: .9rem; padding-t
   body { font-size: 16.5px; }
   .card { padding: 20px 18px 22px; }
   .hero-inner { padding-block: 32px 32px; }
+  .mm-row { grid-template-columns: minmax(0, 1fr); }
+  .facts div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
 }
 @media (prefers-reduced-motion: no-preference) {
   .card { animation: rise .5s ease both; }
   @keyframes rise { from { transform: translateY(8px); } to { transform: none; } }
 }
-
-/* نسخة العرض الثابتة على GitHub Pages: لا متابعة ولا تحرير */
-[data-static] .progress, [data-static] .legend, [data-static] .pill, [data-static] .cnt, [data-static] .chev, [data-static] .body { display: none !important; }
-[data-static] .part summary { pointer-events: none; cursor: default; }
-[data-static] .dg .nd:not(.hollow) { fill: var(--line); }
+/* نسخة العرض الثابتة على GitHub Pages */
+.part .ph{pointer-events:none}
 </style>
 
 <header class="hero">
@@ -353,52 +305,55 @@ footer { text-align: center; color: var(--ink-soft); font-size: .9rem; padding-t
         <rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)"/>
       </svg>
     </div>
-    <p class="kind">خطة بحث</p>
+    <p class="kind">رسالة دكتوراه</p>
     <h1 class="title">جهود الجامعة الإسلامية بالمدينة المنورة في التحذير من الجماعات والأحزاب</h1>
     <p class="subtitle">دراسة تأصيلية تحليلية</p>
     <div class="researcher">
       <small>إعداد الباحث</small>
       <strong>عبدالله بن حسين الجابري</strong>
     </div>
-    <div class="progress">
-      <div class="pl"><span>تقدّم الدراسة</span><strong id="pcount">اكتمل ٠ من ٧</strong></div>
-      <div class="bar" id="bar" role="img" aria-label="تقدّم الدراسة"></div>
-      <ul class="legend" id="legend-hero"></ul>
-    </div>
   </div>
 </header>
 
 <nav class="nav" aria-label="أقسام الصفحة">
   <div class="nav-inner" id="nav">
+    <a href="#info">البيانات</a>
     <a href="#goals">الأهداف</a>
     <a href="#chapters">الفصول</a>
-    <a href="#structure">البنية</a>
     <a href="#results">النتائج</a>
     <a href="#recs">التوصيات</a>
   </div>
 </nav>
 
 <main>
+  <section class="card" id="info">
+    <h2>بيانات الرسالة</h2>
+    <dl class="facts">
+      <div><dt>العنوان</dt><dd>جهود الجامعة الإسلامية بالمدينة المنورة في التحذير من الجماعات والأحزاب</dd></div>
+      <div><dt>نوع الدراسة</dt><dd>دراسة تأصيلية تحليلية</dd></div>
+      <div><dt>الجامعة</dt><dd>الجامعة الإسلامية بالمدينة المنورة</dd></div>
+      <div><dt>الكلية</dt><dd>كلية الدعوة وأصول الدين</dd></div>
+      <div><dt>الباحث</dt><dd>عبدالله بن حسين الجابري</dd></div>
+    </dl>
+  </section>
+
   <section class="card" id="goals">
     <h2>أهداف الدراسة</h2>
     <p>تهدف الدراسة إلى إبراز جهود الجامعة الإسلامية في التحذير من الجماعات والأحزاب الدعوية.</p>
   </section>
 
   <section class="card" id="chapters">
-    <h2>فصول الدراسة</h2>
+    <h2>محتويات الرسالة</h2>
     <p class="lead">احتوت الدراسة على مقدمةٍ وتمهيد وخمسة فصول، وهي كالتالي:</p>
-    <p class="hint" data-edit hidden>حدّث حالة كل جزء من بطاقته، وأضف مباحثه وملاحظاتك، فيُحفظ ذلك تلقائياً ويراه كل من يفتح الرابط.</p>
-    <p class="sync" id="sync" role="status" hidden></p>
-    <ol class="parts" id="parts"></ol>
-  </section>
-
-  <section class="card" id="structure">
-    <h2>بنية الدراسة</h2>
-    <figure class="figure">
-      <div id="dg-wrap" style="width:100%;display:flex;justify-content:center"></div>
-      <ul class="legend" id="legend-dg"></ul>
-      <figcaption>يعرض المخطط أجزاء الدراسة بترتيبها، وتتلوّن كل عقدة بحالة جزئها، وتنقلك النقرة عليها إلى بطاقتها.</figcaption>
-    </figure>
+    <ol class="parts">
+      <li class="part" id="intro"><div class="ph"><span class="ttl"><span class="tag">المقدمة</span></span></div></li>
+      <li class="part" id="pre"><div class="ph"><span class="ttl"><span class="tag">التمهيد</span></span></div></li>
+      <li class="part" id="c1"><div class="ph"><span class="ttl"><span class="tag">الفصل الأول</span><span class="txt">جهود الجامعة الإسلامية في بيان مخالفة الجماعات والأحزاب الدعوية أصول أهل السنة والجماعة.</span></span></div></li>
+      <li class="part" id="c2"><div class="ph"><span class="ttl"><span class="tag">الفصل الثاني</span><span class="txt">جهود الجامعة الإسلامية في التحذير من الفرق التي انبنت عليها الجماعات والأحزاب الدعوية قديماً.</span></span></div></li>
+      <li class="part" id="c3"><div class="ph"><span class="ttl"><span class="tag">الفصل الثالث</span><span class="txt">جهود الجامعة الإسلامية في التحذير من الجماعات والأحزاب الدعوية حديثاً.</span></span></div></li>
+      <li class="part" id="c4"><div class="ph"><span class="ttl"><span class="tag">الفصل الرابع</span><span class="txt">جهود الجامعة الإسلامية في الرد على الوسائل والأساليب للجماعات والأحزاب الدعوية.</span></span></div></li>
+      <li class="part" id="c5"><div class="ph"><span class="ttl"><span class="tag">الفصل الخامس</span><span class="txt">جهود الجامعة الإسلامية في بيان الآثار الناجمة عن الجماعات والأحزاب الدعوية.</span></span></div></li>
+    </ol>
   </section>
 
   <section class="card" id="results">
@@ -419,251 +374,6 @@ footer { text-align: center; color: var(--ink-soft); font-size: .9rem; padding-t
 
   <footer>الجامعة الإسلامية بالمدينة المنورة · كلية الدعوة وأصول الدين</footer>
 </main>
-
-<script>
-(function () {
-  if (!window.claude || !window.claude.use) document.documentElement.setAttribute("data-static", "");
-  var ST = [["todo", "لم يبدأ"], ["writing", "قيد الكتابة"], ["review", "قيد المراجعة"], ["done", "مكتمل"]];
-  var STL = {}; ST.forEach(function (s) { STL[s[0]] = s[1]; });
-  var PARTS = [
-    { k: "intro", tag: "المقدمة", short: "", text: "" },
-    { k: "pre", tag: "التمهيد", short: "", text: "" },
-    { k: "c1", tag: "الفصل الأول", short: "بيان مخالفة أصول أهل السنة", text: "جهود الجامعة الإسلامية في بيان مخالفة الجماعات والأحزاب الدعوية أصول أهل السنة والجماعة." },
-    { k: "c2", tag: "الفصل الثاني", short: "التحذير من الفرق القديمة", text: "جهود الجامعة الإسلامية في التحذير من الفرق التي انبنت عليها الجماعات والأحزاب الدعوية قديماً." },
-    { k: "c3", tag: "الفصل الثالث", short: "التحذير من الجماعات حديثاً", text: "جهود الجامعة الإسلامية في التحذير من الجماعات والأحزاب الدعوية حديثاً." },
-    { k: "c4", tag: "الفصل الرابع", short: "الرد على الوسائل والأساليب", text: "جهود الجامعة الإسلامية في الرد على الوسائل والأساليب للجماعات والأحزاب الدعوية." },
-    { k: "c5", tag: "الفصل الخامس", short: "بيان الآثار الناجمة", text: "جهود الجامعة الإسلامية في بيان الآثار الناجمة عن الجماعات والأحزاب الدعوية." }
-  ];
-  var AR = "٠١٢٣٤٥٦٧٨٩";
-  function ar(n) { return String(n).replace(/\d/g, function (d) { return AR[d]; }); }
-  function $(s, r) { return (r || document).querySelector(s); }
-  function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
-
-  var state = {}, dirty = {}, ver = {}, timers = {}, chain = {};
-  var db = null, canEdit = false;
-
-  function blank() { return { status: "todo", items: [], notes: "" }; }
-  function get(k) { return state[k] || blank(); }
-  function normalize(d) {
-    var o = blank();
-    if (d && STL[d.status]) o.status = d.status;
-    if (d && Array.isArray(d.items)) o.items = d.items.filter(function (i) { return i && typeof i.t === "string"; }).map(function (i) { return { id: String(i.id || ""), t: i.t, d: !!i.d }; });
-    if (d && typeof d.notes === "string") o.notes = d.notes;
-    return o;
-  }
-
-  /* بناء بطاقات الأجزاء */
-  var list = $("#parts");
-  PARTS.forEach(function (p) {
-    var li = document.createElement("li");
-    li.className = "part"; li.id = p.k; li.setAttribute("data-k", p.k);
-    var segs = ST.map(function (s) { return '<button type="button" data-st="' + s[0] + '" aria-pressed="false">' + s[1] + "</button>"; }).join("");
-    li.innerHTML =
-      '<details data-k="' + p.k + '"><summary>' +
-        '<span class="ttl"><span class="tag">' + p.tag + "</span>" + (p.text ? '<span class="txt">' + p.text + "</span>" : "") + "</span>" +
-        '<span class="meta"><span class="cnt" data-cnt hidden></span><span class="pill"><i class="dot st-todo" data-dot></i><span data-stl>لم يبدأ</span></span><span class="chev" aria-hidden="true"></span></span>' +
-      "</summary>" +
-      '<div class="body">' +
-        '<div class="ctl" data-edit hidden><h3>حالة الجزء</h3><div class="seg" role="group" aria-label="حالة ' + p.tag + '">' + segs + "</div></div>" +
-        '<div class="mb" data-mb><h3>المباحث</h3><ul class="items" data-items></ul><p class="empty" data-empty>لم تُضف مباحث بعد.</p>' +
-          '<div class="add" data-edit hidden><input type="text" id="add-' + p.k + '" aria-label="عنوان مبحث جديد في ' + p.tag + '" placeholder="عنوان المبحث"><button type="button" class="btn" data-add>إضافة</button></div></div>' +
-        '<div class="nt" data-nt><label for="nt-' + p.k + '">ملاحظات</label><textarea id="nt-' + p.k + '" rows="4" placeholder="اكتب ملاحظاتك على هذا الجزء"></textarea></div>' +
-      "</div></details>";
-    list.appendChild(li);
-  });
-
-  /* مخطط البنية */
-  function buildDiagram() {
-    var out = '<svg class="dg" viewBox="0 0 360 612" role="group" aria-label="مخطط بنية الدراسة: المقدمة والتمهيد وخمسة فصول ثم النتائج والتوصيات">';
-    out += '<rect class="rb" x="16" y="8" width="328" height="64" rx="10"/>';
-    out += '<text class="rt" x="180" y="36" text-anchor="middle">جهود الجامعة الإسلامية في التحذير</text>';
-    out += '<text class="rt" x="180" y="58" text-anchor="middle">من الجماعات والأحزاب</text>';
-    var lastMid = 0;
-    var nodes = "";
-    PARTS.forEach(function (p, i) {
-      var top = 96 + i * 64, mid = top + 26; lastMid = mid + 64;
-      nodes += '<a href="#' + p.k + '" class="dn" data-k="' + p.k + '" aria-label="' + p.tag + (p.short ? "، " + p.short : "") + '">' +
-        '<line class="tr" x1="332" y1="' + mid + '" x2="312" y2="' + mid + '"/>' +
-        '<rect class="nb" x="16" y="' + top + '" width="296" height="52" rx="8"/>' +
-        '<circle class="nd st-todo" data-dot cx="332" cy="' + mid + '" r="8"/>';
-      if (p.short) {
-        nodes += '<text class="tg" data-stxt x="164" y="' + (top + 20) + '" text-anchor="middle">' + p.tag + '</text>' +
-                 '<text class="lb" x="164" y="' + (top + 41) + '" text-anchor="middle">' + p.short + '</text>';
-      } else {
-        nodes += '<text class="lb" data-stxt x="164" y="' + (top + 31) + '" text-anchor="middle">' + p.tag + '</text>';
-      }
-      nodes += "</a>";
-    });
-    var ftop = 96 + PARTS.length * 64, fmid = ftop + 26;
-    nodes += '<a href="#results" class="dn" aria-label="النتائج والتوصيات">' +
-      '<line class="tr" x1="332" y1="' + fmid + '" x2="312" y2="' + fmid + '"/>' +
-      '<rect class="nb dash" x="16" y="' + ftop + '" width="296" height="52" rx="8"/>' +
-      '<circle class="nd hollow" cx="332" cy="' + fmid + '" r="8"/>' +
-      '<text class="lb" x="164" y="' + (ftop + 31) + '" text-anchor="middle">النتائج والتوصيات</text></a>';
-    out += '<line class="tr" x1="332" y1="72" x2="332" y2="' + fmid + '"/>' + nodes + "</svg>";
-    $("#dg-wrap").innerHTML = out;
-  }
-  buildDiagram();
-
-  function buildLegend(el) {
-    el.innerHTML = ST.map(function (s) { return '<li><i class="dot st-' + s[0] + '"></i><span>' + s[1] + ' <b data-n="' + s[0] + '">٠</b></span></li>'; }).join("");
-  }
-  buildLegend($("#legend-hero")); buildLegend($("#legend-dg"));
-  var bar = $("#bar");
-  PARTS.forEach(function () { bar.appendChild(document.createElement("span")); });
-
-  /* العرض */
-  function renderPart(k) {
-    var p = PARTS.filter(function (x) { return x.k === k; })[0], s = get(k), li = document.getElementById(k);
-    var dot = $("[data-dot]", li); dot.className = "dot st-" + s.status;
-    $("[data-stl]", li).textContent = STL[s.status];
-    $$(".seg button", li).forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-st") === s.status)); });
-    var done = s.items.filter(function (i) { return i.d; }).length;
-    var cnt = $("[data-cnt]", li);
-    cnt.hidden = !s.items.length;
-    cnt.textContent = ar(done) + " من " + ar(s.items.length) + " مباحث";
-    var ul = $("[data-items]", li); ul.innerHTML = "";
-    s.items.forEach(function (it) {
-      var row = document.createElement("li"); if (it.d) row.className = "done";
-      var cb = document.createElement("input"); cb.type = "checkbox"; cb.checked = it.d; cb.disabled = !canEdit; cb.setAttribute("data-id", it.id); cb.setAttribute("aria-label", "إتمام المبحث");
-      var t = document.createElement("span"); t.className = "t"; t.textContent = it.t;
-      row.appendChild(cb); row.appendChild(t);
-      if (canEdit) {
-        var rm = document.createElement("button"); rm.type = "button"; rm.className = "rm"; rm.setAttribute("data-rm", it.id); rm.setAttribute("aria-label", "حذف المبحث"); rm.textContent = "×";
-        row.appendChild(rm);
-      }
-      ul.appendChild(row);
-    });
-    $("[data-empty]", li).hidden = !!s.items.length || !canEdit;
-    $("[data-mb]", li).hidden = !canEdit && !s.items.length;
-    var ta = $("textarea", li);
-    ta.readOnly = !canEdit;
-    if (document.activeElement !== ta) ta.value = s.notes;
-    $("[data-nt]", li).hidden = !canEdit && !s.notes;
-    var dn = $('.dn[data-k="' + k + '"]');
-    if (dn) {
-      $("[data-dot]", dn).setAttribute("class", "nd st-" + s.status);
-      $("[data-stxt]", dn).textContent = (document.documentElement.hasAttribute("data-static") ? p.tag : p.tag + " · " + STL[s.status]);
-      if (p.short) $("[data-stxt]", dn).textContent = (document.documentElement.hasAttribute("data-static") ? p.tag : p.tag + " · " + STL[s.status]);
-    }
-  }
-  function renderProgress() {
-    var counts = { todo: 0, writing: 0, review: 0, done: 0 };
-    var segs = $$("span", bar);
-    PARTS.forEach(function (p, i) { var st = get(p.k).status; counts[st]++; segs[i].className = "st-" + st; segs[i].title = p.tag + " · " + STL[st]; });
-    $$("[data-n]").forEach(function (b) { b.textContent = ar(counts[b.getAttribute("data-n")]); });
-    var txt = "اكتمل " + ar(counts.done) + " من " + ar(PARTS.length);
-    $("#pcount").textContent = txt;
-    bar.setAttribute("aria-label", "تقدّم الدراسة: " + txt + "، قيد الكتابة " + ar(counts.writing) + "، قيد المراجعة " + ar(counts.review));
-  }
-  function renderAll() {
-    $$("[data-edit]").forEach(function (el) { el.hidden = !canEdit; });
-    PARTS.forEach(function (p) { renderPart(p.k); });
-    renderProgress();
-  }
-
-  /* الحفظ */
-  function setSync(msg) { var el = $("#sync"); el.textContent = msg; el.hidden = !msg; }
-  function flush(k) {
-    clearTimeout(timers[k]);
-    if (!db || !dirty[k]) return;
-    var data = JSON.parse(JSON.stringify(get(k))), v = ver[k];
-    chain[k] = (chain[k] || Promise.resolve()).then(function () {
-      return db.doc("plan/" + k).set(data);
-    }).then(function () {
-      if (ver[k] === v) dirty[k] = false;
-      setSync("");
-    }).catch(function () {
-      setSync("تعذّر حفظ آخر تعديل، وسيبقى في الصفحة إلى أن تُعيد المحاولة بتعديل جديد.");
-    });
-  }
-  function commit(k, patch, delay) {
-    var cur = JSON.parse(JSON.stringify(get(k)));
-    for (var key in patch) cur[key] = patch[key];
-    state[k] = cur; dirty[k] = true; ver[k] = (ver[k] || 0) + 1;
-    renderPart(k); renderProgress();
-    clearTimeout(timers[k]);
-    timers[k] = setTimeout(function () { flush(k); }, delay || 0);
-  }
-
-  /* التفاعل */
-  list.addEventListener("click", function (e) {
-    if (!canEdit) return;
-    var li = e.target.closest(".part"); if (!li) return;
-    var k = li.getAttribute("data-k"), s = get(k);
-    var b = e.target.closest("[data-st]");
-    if (b) { commit(k, { status: b.getAttribute("data-st") }); return; }
-    var rm = e.target.closest("[data-rm]");
-    if (rm) { var id = rm.getAttribute("data-rm"); commit(k, { items: s.items.filter(function (i) { return i.id !== id; }) }); return; }
-    if (e.target.closest("[data-add]")) addItem(k, li);
-  });
-  list.addEventListener("change", function (e) {
-    if (!canEdit || e.target.type !== "checkbox") return;
-    var li = e.target.closest(".part"), k = li.getAttribute("data-k"), id = e.target.getAttribute("data-id");
-    commit(k, { items: get(k).items.map(function (i) { return i.id === id ? { id: i.id, t: i.t, d: e.target.checked } : i; }) });
-  });
-  list.addEventListener("keydown", function (e) {
-    if (e.key !== "Enter" || !e.target.matches(".add input")) return;
-    e.preventDefault(); var li = e.target.closest(".part"); addItem(li.getAttribute("data-k"), li);
-  });
-  list.addEventListener("input", function (e) {
-    if (!canEdit || !e.target.matches("textarea")) return;
-    var li = e.target.closest(".part"); commit(li.getAttribute("data-k"), { notes: e.target.value }, 800);
-  });
-  list.addEventListener("focusout", function (e) {
-    if (canEdit && e.target.matches("textarea")) flush(e.target.closest(".part").getAttribute("data-k"));
-  });
-  function addItem(k, li) {
-    var inp = $(".add input", li), t = inp.value.trim(); if (!t) return;
-    var id = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
-    commit(k, { items: get(k).items.concat([{ id: id, t: t, d: false }]) });
-    inp.value = ""; inp.focus();
-  }
-
-  /* التنقّل */
-  function openHash() {
-    var id = decodeURIComponent(location.hash.slice(1)); if (!id) return;
-    var d = document.querySelector('details[data-k="' + id.replace(/[^a-z0-9_-]/gi, "") + '"]');
-    if (d) d.open = true;
-  }
-  window.addEventListener("hashchange", openHash); openHash();
-  try {
-    var links = $$("#nav a"), ids = links.map(function (a) { return a.getAttribute("href").slice(1); });
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (!en.isIntersecting) return;
-        links.forEach(function (a) { a.removeAttribute("aria-current"); });
-        var a = links[ids.indexOf(en.target.id)];
-        if (a) { a.setAttribute("aria-current", "true"); a.scrollIntoView({ block: "nearest", inline: "center" }); }
-      });
-    }, { rootMargin: "-20% 0px -65% 0px" });
-    ids.forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
-  } catch (e) {}
-
-  renderAll();
-
-  /* الاتصال بالمخزن */
-  (async function () {
-    try {
-      if (!window.claude || !window.claude.use) return;
-      var user = await window.claude.use("user");
-      canEdit = user ? await user.canEdit() : false;
-      db = await window.claude.use("db");
-      if (!db) { canEdit = false; renderAll(); return; }
-      renderAll();
-      var loadTimer = setTimeout(function () { setSync("تعذّر الوصول إلى بيانات المتابعة الآن، وقد تكون المعروضة غير محدّثة."); }, 10000);
-      db.collection("plan").onSnapshot(function (snap) {
-        var seen = {}; snap.docs.forEach(function (d) { seen[d.id] = d.data(); });
-        PARTS.forEach(function (p) { if (dirty[p.k]) return; state[p.k] = seen[p.k] ? normalize(seen[p.k]) : null; });
-        renderAll();
-        if (!snap.metadata.fromCache) { clearTimeout(loadTimer); setSync(""); }
-      }, function () {
-        clearTimeout(loadTimer); setSync("تعذّر تحميل بيانات المتابعة.");
-      });
-    } catch (e) { db = null; canEdit = false; renderAll(); }
-  })();
-})();
-</script>
 
 </body>
 </html>

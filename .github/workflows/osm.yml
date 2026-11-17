@@ -10,17 +10,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: fetch
+      - name: overpass
         run: |
-          mkdir -p osm
+          rm -f osm/out*.json
           for q in osm/query*.txt; do
-            o="${q%.txt}.json"; o="${o/query/out}"
-            for ep in https://overpass-api.de/api/interpreter https://overpass.kumi.systems/api/interpreter; do
-              curl -sS -m 300 --data-urlencode "data@$q" "$ep" -o "$o" && python3 -c "import json;json.load(open('$o'))" && break
+            o="${q%.txt}.json"; o="${o/query/out}"; ok=0
+            for round in 1 2 3; do
+              for ep in https://overpass.private.coffee/api/interpreter https://maps.mail.ru/osm/tools/overpass/api/interpreter https://overpass-api.de/api/interpreter https://overpass.kumi.systems/api/interpreter https://overpass.osm.jp/api/interpreter; do
+                echo "try $ep $q"
+                curl -sS -m 300 --data-urlencode "data@$q" "$ep" -o "$o" && python3 -c "import json,sys;d=json.load(open('$o'));print(len(d['elements']))" && ok=1 && break
+              done
+              [ $ok = 1 ] && break; sleep 40
             done
-            ls -la "$o"
+            [ $ok = 1 ] || rm -f "$o"; ls -la osm
           done
+      - name: geofabrik fallback
+        run: |
+          if [ ! -f osm/out1.json ]; then
+            sudo apt-get -qq update && sudo apt-get -qq install -y osmium-tool
+            curl -sSL -o gcc.pbf https://download.geofabrik.de/asia/gcc-states-latest.osm.pbf
+            osmium extract -b 50.05,26.18,50.25,26.37 gcc.pbf -o kd.pbf --overwrite
+            osmium tags-filter kd.pbf w/highway r/boundary r/place w/place n/place -o kdf.pbf --overwrite
+            osmium export kdf.pbf -f geojson -o osm/kd.geojson --overwrite -a type,id
+            ls -la osm
+          fi
       - name: commit
         run: |
           git config user.name github-actions; git config user.email actions@github.com
-          git add osm/out*.json; git commit -m "osm data" || true; git push
+          git add -A osm; git commit -m "osm data" || true; git push

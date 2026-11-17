@@ -897,6 +897,9 @@ button.city,.city{font-weight:700;color:#5d7684;margin:12px 4px 7px}
 @media(max-width:760px){.det.wide{max-height:52%}}
 @media(max-width:760px){.det.wide{display:block;overflow-y:auto;overscroll-behavior:contain;padding-bottom:12px}.det.wide .scroll{overflow:visible;margin-top:8px}.det.wide h2{font-size:15.5px}.det.wide .t p{font-size:11.5px}}
 
+.outb{border:1px solid #ffffff30;background:#ffffff1c;color:#fff;width:38px;height:38px;border-radius:10px;font-size:18px;line-height:1;display:grid;place-items:center;flex-shrink:0}.outb:hover{background:#b3303c}
+@media(max-width:760px){.top{gap:8px}.outb{width:34px;height:34px;font-size:16px}}
+
 #app{display:flex;flex-direction:column;flex:1;min-height:0}
 #gate{position:fixed;inset:0;z-index:5000;display:grid;place-items:center;padding:18px;background:linear-gradient(135deg,#0f2b3f,#173f58 60%,#157a9a);color:#17303f;overflow:auto}
 #gate .box{background:#fff;border-radius:22px;padding:30px 26px;width:100%;max-width:400px;box-shadow:0 30px 70px #0007;text-align:center}
@@ -909,7 +912,7 @@ button.city,.city{font-weight:700;color:#5d7684;margin:12px 4px 7px}
 <body data-view="list">
 <div id="gate"><form class="box" id="f" autocomplete="off"><div class="glogo">📍</div><h1>خريطة التمركز الميداني</h1><p>أدخل كلمة المرور للدخول.</p><input id="pw" type="password" placeholder="كلمة المرور" aria-label="كلمة المرور" autocomplete="current-password" autofocus required><button id="go" type="submit">دخول</button><div class="err" id="err" role="alert"></div></form></div>
 <div id="app" hidden>
-<header class="top"><div class="brand"><div class="logo">📍</div><div><b>خريطة التمركز الميداني</b><small>المدارس والمجمعات والشوارع · الخبر والظهران</small></div></div><span class="hchip" id="hdrCount"></span><button class="fit" id="fitBtn">⛶ عرض المنطقة</button></header>
+<header class="top"><div class="brand"><div class="logo">📍</div><div><b>خريطة التمركز الميداني</b><small>المدارس والمجمعات والشوارع · الخبر والظهران</small></div></div><span class="hchip" id="hdrCount"></span><button class="outb" id="logoutBtn" type="button" title="تسجيل الخروج" aria-label="تسجيل الخروج">⏻</button><button class="fit" id="fitBtn">⛶ عرض المنطقة</button></header>
 <main class="wrap">
  <aside class="side">
   <div class="head">
@@ -1081,6 +1084,7 @@ function refreshAll(){loadRecords();if(sel){const ok=sel.k==='site'?sites.some(x
  counts();renderList();rebuild();drawHL();renderDet()}
 window.FM={DATA,ctx,mode:MODE,map,L,refreshAll,choose,unchoose,toast,fitAll,setView_,STL,CITIES,META,TCOL,fmtN,esc,norm,dPt,dLines,hasXY,
  get sel(){return sel},get showAll(){return showAll},setShowAll(v){showAll=!!v;refreshAll()},setEditing(id){editingId=id;rebuildStreets();drawHL()},siteObj:id=>sites.find(x=>x.id===id),streetObj:id=>streets.find(x=>x.code===id),stEnds};
+$('logoutBtn').addEventListener('click',()=>{try{sessionStorage.removeItem('fm_k')}catch(e){}location.reload()});
 if(ADMIN&&window.FM_ADMIN_INIT)window.FM_ADMIN_INIT(window.FM);
 };
 </script>

@@ -1,15 +1,1881 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" lang="en"/>
-  <title>OSM3S Response</title>
-</head>
-<body>
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-24T11:04:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
 
-<p>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</p>
-<p><strong style="color:#FF0000">Error</strong>: runtime error: open64: 0 Success /osm3s_osm_base Dispatcher_Client::request_read_and_idx::timeout. The server is probably too busy to handle your request. </p>
+{
+  "type": "node",
+  "id": 12829715505,
+  "lat": 26.1850529,
+  "lon": 50.0888738,
+  "tags": {
+    "name": "غرب العزيزية",
+    "name:ar": "غرب العزيزية",
+    "name:en": "West Al Aziziyah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715558,
+  "lat": 26.1899477,
+  "lon": 50.1304434,
+  "tags": {
+    "name": "المها",
+    "name:ar": "المها",
+    "name:en": "Al Maha",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715574,
+  "lat": 26.1868669,
+  "lon": 50.1491545,
+  "tags": {
+    "name": "الصواري",
+    "name:ar": "الصواري",
+    "name:en": "As Sawari",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715549,
+  "lat": 26.2071986,
+  "lon": 50.1438331,
+  "tags": {
+    "name": "الشفاء",
+    "name:ar": "الشفاء",
+    "name:en": "Ash Shifa",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715564,
+  "lat": 26.1822457,
+  "lon": 50.1972195,
+  "tags": {
+    "name": "التحلية",
+    "name:ar": "التحلية",
+    "name:en": "At Tahliyah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715577,
+  "lat": 26.1967636,
+  "lon": 50.1788520,
+  "tags": {
+    "name": "البحيرة",
+    "name:ar": "البحيرة",
+    "name:en": "Al Buhayrah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715568,
+  "lat": 26.2015769,
+  "lon": 50.2171325,
+  "tags": {
+    "name": "اشبيليا",
+    "name:ar": "اشبيليا",
+    "name:en": "Ishbiliya",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715547,
+  "lat": 26.2086617,
+  "lon": 50.1863193,
+  "tags": {
+    "name": "الخزامى",
+    "name:ar": "الخزامى",
+    "name:en": "Al Khuzama",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715552,
+  "lat": 26.2249090,
+  "lon": 50.1870059,
+  "tags": {
+    "name": "التعاون",
+    "name:ar": "التعاون",
+    "name:en": "At Taawun",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715536,
+  "lat": 26.2101633,
+  "lon": 50.2053308,
+  "tags": {
+    "name": "الجسر",
+    "name:ar": "الجسر",
+    "name:en": "Al Jisr",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715540,
+  "lat": 26.2264523,
+  "lon": 50.2051484,
+  "tags": {
+    "name": "الحمراء",
+    "name:ar": "الحمراء",
+    "name:en": "Al Hamra",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715570,
+  "lat": 26.2274498,
+  "lon": 50.2168750,
+  "tags": {
+    "name": "الخور",
+    "name:ar": "الخور",
+    "name:en": "Al Khawr",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 447805356,
+  "lat": 26.2966528,
+  "lon": 50.1202146,
+  "tags": {
+    "GNS:dsg_code": "PPL",
+    "GNS:dsg_name": "populated place",
+    "GNS:id": "-3093628",
+    "int_name": "Az̧ Z̧ahrān",
+    "name": "الظهران",
+    "name:ar": "الظهران",
+    "name:be": "Дахран",
+    "name:bn": "জাহরান",
+    "name:ca": "Dhahran",
+    "name:ce": "ЗахӀран",
+    "name:ceb": "Dhahran",
+    "name:ckb": "زەھڕان",
+    "name:cs": "Dahrán",
+    "name:de": "Dhahran",
+    "name:el": "Νταχράν",
+    "name:en": "Dhahran",
+    "name:eo": "Dahran",
+    "name:es": "Dhahran",
+    "name:eu": "Dahran",
+    "name:fa": "ظهران",
+    "name:fi": "Dhahran",
+    "name:fr": "Az Zahran",
+    "name:he": "דהראן",
+    "name:hi": "डाहरान",
+    "name:hr": "Dahran",
+    "name:id": "Dhahran",
+    "name:it": "Dhahran",
+    "name:ja": "ダーラン",
+    "name:ka": "დაჰრანი",
+    "name:ko": "다란",
+    "name:ku": "Zehran",
+    "name:lt": "Dahranas",
+    "name:ml": "ദഹ്റാൻ",
+    "name:ms": "Dhahran",
+    "name:mzn": "ظهران",
+    "name:nb": "Dhahran",
+    "name:ne": "दहरान",
+    "name:nl": "Dhahraan",
+    "name:nn": "Dhahran",
+    "name:no": "Dhahran",
+    "name:pl": "Az-Zahran",
+    "name:pt": "Darã",
+    "name:ru": "Дахран",
+    "name:sco": "Dhahran",
+    "name:sk": "Dahrán",
+    "name:sq": "Dhahran",
+    "name:su": "Zhahran",
+    "name:sv": "Dhahran",
+    "name:tl": "Dhahran",
+    "name:tr": "Zahran",
+    "name:uk": "Дахран",
+    "name:ur": "ظہران",
+    "name:uz": "Dahron",
+    "name:vi": "Dhahran",
+    "name:zh": "宰赫兰",
+    "place": "city",
+    "population": "120521",
+    "population:date": "2010",
+    "source:population": "stats.gov.sa",
+    "wikidata": "Q268915",
+    "wikipedia": "en:Dhahran"
+  }
+},
+{
+  "type": "node",
+  "id": 13694648338,
+  "lat": 26.3120351,
+  "lon": 50.1201225,
+  "tags": {
+    "name": "غرب الظهران",
+    "name:ar": "غرب الظهران",
+    "name:en": "Gharb Adh Dhahran",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13028097051,
+  "lat": 26.3582678,
+  "lon": 50.0501408,
+  "tags": {
+    "name": "طيبة",
+    "name:ar": "طيبة",
+    "name:en": "Taibah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13028110556,
+  "lat": 26.3406599,
+  "lon": 50.0699582,
+  "tags": {
+    "name": "الشعلة",
+    "name:ar": "الشعلة",
+    "name:en": "Ash Shulah",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "node",
+  "id": 13028097073,
+  "lat": 26.3596781,
+  "lon": 50.1125055,
+  "tags": {
+    "name": "هجر",
+    "name:ar": "هجر",
+    "name:en": "Hajr",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715572,
+  "lat": 26.2560111,
+  "lon": 50.1995372,
+  "tags": {
+    "name": "صناعية الثقبة",
+    "name:ar": "صناعية الثقبة",
+    "name:en": "Sinaiyah Ath Thuqbah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715560,
+  "lat": 26.2427707,
+  "lon": 50.2042578,
+  "tags": {
+    "name": "ابن سيناء",
+    "name:ar": "ابن سيناء",
+    "name:en": "Ibn Sina",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715557,
+  "lat": 26.2443103,
+  "lon": 50.2135706,
+  "tags": {
+    "name": "صناعية الفوازية",
+    "name:ar": "صناعية الفوازية",
+    "name:en": "Sinaiyah Al Fawaziyah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 1236774099,
+  "lat": 26.2730290,
+  "lon": 50.1927724,
+  "tags": {
+    "GNS:dsg_code": "PPLX",
+    "GNS:dsg_name": "section of populated place",
+    "GNS:id": "-3093433",
+    "alt_name": "Al Thaqbah;Thuqba",
+    "int_name": "Ath Thuqbah",
+    "name": "الثقبة",
+    "name:ar": "الثقبة",
+    "name:de": "Ath Thuqbah",
+    "name:en": "Ath Thuqbah",
+    "name:fa": "ثقبه",
+    "name:fr": "Ath Thuqbah",
+    "name:ml": "അൽ-തുഖ്ബ",
+    "place": "neighbourhood",
+    "population": "238066",
+    "population:date": "2010",
+    "source:name": "GNS",
+    "source:population": "stats.gov.sa",
+    "wikidata": "Q601130"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715562,
+  "lat": 26.2576047,
+  "lon": 50.2094584,
+  "tags": {
+    "name": "الإسكان",
+    "name:ar": "الإسكان",
+    "name:en": "Al Iskan",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715545,
+  "lat": 26.2587822,
+  "lon": 50.2167892,
+  "tags": {
+    "name": "الساحل",
+    "name:ar": "الساحل",
+    "name:en": "As Sahil",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715566,
+  "lat": 26.2739450,
+  "lon": 50.2073049,
+  "tags": {
+    "name": "الخبر الجنوبية",
+    "name:ar": "الخبر الجنوبية",
+    "name:en": "Al Khubar Al Janubiyah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13694648339,
+  "lat": 26.3063198,
+  "lon": 50.1520012,
+  "tags": {
+    "name": "جامعة الملك فهد للبترول والمعادن",
+    "name:ar": "جامعة الملك فهد للبترول والمعادن",
+    "name:en": "King Fahd University of Petroleum and Minerals",
+    "place": "neighbourhood",
+    "short_name": "KFUPM"
+  }
+},
+{
+  "type": "node",
+  "id": 13694648337,
+  "lat": 26.3179543,
+  "lon": 50.1661189,
+  "tags": {
+    "name": "الدوحة الجنوبية",
+    "name:ar": "الدوحة الجنوبية",
+    "name:en": "Ad Dawhah Al Janubiyah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13694648340,
+  "lat": 26.3266282,
+  "lon": 50.1499520,
+  "tags": {
+    "name": "الدانة الجنوبية",
+    "name:ar": "الدانة الجنوبية",
+    "name:en": "Ad Danah Al Janubiyah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 1236774165,
+  "lat": 26.2950611,
+  "lon": 50.1924715,
+  "tags": {
+    "alt_name": "العقربية",
+    "int_name": "Al Aqrabīyah,Al Agrabiyak,Al Aqrabiya,Al Aqrabīya, Al Aqrabiyah",
+    "name": "العقربية",
+    "name:ar": "العقربية",
+    "name:de": "Al Aqrabiyah",
+    "name:en": "Al Aqrabiyah",
+    "name:fr": "Al Aqrabiyah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715575,
+  "lat": 26.2977243,
+  "lon": 50.1774786,
+  "tags": {
+    "name": "العليا",
+    "name:ar": "العليا",
+    "name:en": "Al Olaya",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 32441763,
+  "lat": 26.3039999,
+  "lon": 50.1960237,
+  "tags": {
+    "GNS:dsg_code": "PPL",
+    "GNS:dsg_name": "populated place",
+    "GNS:id": "-3092086",
+    "alt_name": "Al Khobar;Khobar",
+    "capital": "6",
+    "int_name": "Al Khubar",
+    "name": "الخبر",
+    "name:ar": "الخبر",
+    "name:bn": "খোবার",
+    "name:ca": "Al-Khubar",
+    "name:ce": "Хобар",
+    "name:ckb": "خوبەر",
+    "name:cs": "Al-Khubar",
+    "name:de": "al-Chubar",
+    "name:en": "Al Khobar",
+    "name:eo": "Ĥubar",
+    "name:es": "Al Kobhar",
+    "name:fa": "خبر",
+    "name:fi": "Al-Khobar",
+    "name:fr": "Khobar",
+    "name:he": "ח'ובאר",
+    "name:hi": "अल खोबर",
+    "name:hr": "Hubar",
+    "name:id": "Khobar",
+    "name:ja": "アル・コバール",
+    "name:kk": "Әл-Хубар",
+    "name:kn": "ಖೋಬರ್",
+    "name:ko": "코바르",
+    "name:ku": "Xuber",
+    "name:ml": "ഖൊബർ",
+    "name:mr": "अल-खोबर",
+    "name:ms": "Khobar",
+    "name:nb": "Khobar",
+    "name:nl": "Khobar",
+    "name:nn": "Al-Khobar",
+    "name:pl": "Al-Chubar",
+    "name:pt": "Cobar",
+    "name:ru": "Эль-Хубар",
+    "name:so": "Khobar",
+    "name:sv": "Al-Khubar",
+    "name:tr": "El-Huber",
+    "name:uk": "Ель-Хубар",
+    "name:vi": "Khobar",
+    "name:zh": "寇巴尔",
+    "place": "city",
+    "population": "219679",
+    "population:date": "2010",
+    "source:population": "stats.gov.sa",
+    "wikidata": "Q311266",
+    "wikipedia": "en:Khobar"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715537,
+  "lat": 26.2931046,
+  "lon": 50.2034856,
+  "tags": {
+    "name": "مدينة العمال",
+    "name:ar": "مدينة العمال",
+    "name:en": "Madinat Al Ummal",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715555,
+  "lat": 26.2911835,
+  "lon": 50.2143001,
+  "tags": {
+    "name": "الخبر الشمالية",
+    "name:ar": "الخبر الشمالية",
+    "name:en": "Al Khubar Ash Shamaliyah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715551,
+  "lat": 26.3081886,
+  "lon": 50.2007388,
+  "tags": {
+    "name": "الحزام الأخضر",
+    "name:ar": "الحزام الأخضر",
+    "name:en": "Al Hizam Al Akhdar",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715567,
+  "lat": 26.3108815,
+  "lon": 50.1845168,
+  "tags": {
+    "name": "الهدا",
+    "name:ar": "الهدا",
+    "name:en": "Al Hada",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715576,
+  "lat": 26.3178827,
+  "lon": 50.2001380,
+  "tags": {
+    "name": "الحزام الذهبي",
+    "name:ar": "الحزام الذهبي",
+    "name:en": "Al Hizam Adh Dhahabi",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715543,
+  "lat": 26.3240373,
+  "lon": 50.1848601,
+  "tags": {
+    "name": "الأندلس",
+    "name:ar": "الأندلس",
+    "name:en": "Al Andalus",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715579,
+  "lat": 26.3294992,
+  "lon": 50.1959323,
+  "tags": {
+    "name": "الجوهرة",
+    "name:ar": "الجوهرة",
+    "name:en": "Al Jawharah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715542,
+  "lat": 26.3222679,
+  "lon": 50.2118968,
+  "tags": {
+    "name": "البستان",
+    "name:ar": "البستان",
+    "name:en": "Al Bustan",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715569,
+  "lat": 26.3094966,
+  "lon": 50.2143001,
+  "tags": {
+    "name": "البندرية",
+    "name:ar": "البندرية",
+    "name:en": "Al Bandariyah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715539,
+  "lat": 26.3119971,
+  "lon": 50.2202653,
+  "tags": {
+    "name": "اليرموك",
+    "name:ar": "اليرموك",
+    "name:en": "Al Yarmok",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715559,
+  "lat": 26.3162671,
+  "lon": 50.2255439,
+  "tags": {
+    "name": "الكورنيش",
+    "name:ar": "الكورنيش",
+    "name:en": "Al Kurnaish",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715563,
+  "lat": 26.3321147,
+  "lon": 50.2078628,
+  "tags": {
+    "name": "الروابي",
+    "name:ar": "الروابي",
+    "name:en": "Ar Rawabi",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13694648335,
+  "lat": 26.3441784,
+  "lon": 50.1317355,
+  "tags": {
+    "name": "الجامعة",
+    "name:ar": "الجامعة",
+    "name:en": "Al Jamiah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13694648341,
+  "lat": 26.3366280,
+  "lon": 50.1439747,
+  "tags": {
+    "name": "الدانة الشمالية",
+    "name:ar": "الدانة الشمالية",
+    "name:en": "Ad Danah Ash Shamaliyah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13028110507,
+  "lat": 26.3544485,
+  "lon": 50.1307359,
+  "tags": {
+    "name": "تهامة",
+    "name:ar": "تهامة",
+    "name:en": "Tihamah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13694648336,
+  "lat": 26.3361180,
+  "lon": 50.1670297,
+  "tags": {
+    "name": "الدوحة الشمالية",
+    "name:ar": "الدوحة الشمالية",
+    "name:en": "Ad Dawhah Ash Shamaliyah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13694648334,
+  "lat": 26.3493185,
+  "lon": 50.1504110,
+  "tags": {
+    "name": "القصور",
+    "name:ar": "القصور",
+    "name:en": "Al Qusur",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13028097074,
+  "lat": 26.3645165,
+  "lon": 50.1336941,
+  "tags": {
+    "name": "قصر الخليج",
+    "name:ar": "قصر الخليج",
+    "name:en": "Qasr Al Khalij",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13694648333,
+  "lat": 26.3642417,
+  "lon": 50.1646741,
+  "tags": {
+    "name": "الحرس الوطني",
+    "name:ar": "الحرس الوطني",
+    "name:en": "Al Haras Al Watani",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715554,
+  "lat": 26.3432682,
+  "lon": 50.1866626,
+  "tags": {
+    "name": "قرطبة",
+    "name:ar": "قرطبة",
+    "name:en": "Qurtubah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715556,
+  "lat": 26.3578047,
+  "lon": 50.1831435,
+  "tags": {
+    "name": "المدينة الرياضية",
+    "name:ar": "المدينة الرياضية",
+    "name:en": "Sports City",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715573,
+  "lat": 26.3508828,
+  "lon": 50.2014255,
+  "tags": {
+    "name": "الراكة الجنوبية",
+    "name:ar": "الراكة الجنوبية",
+    "name:en": "Ar Rakah Al Janubiyah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715535,
+  "lat": 26.3543438,
+  "lon": 50.2210807,
+  "tags": {
+    "name": "البحر",
+    "name:ar": "البحر",
+    "name:en": "Al Bahar",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13694648332,
+  "lat": 26.3677618,
+  "lon": 50.1756063,
+  "tags": {
+    "name": "القشلة",
+    "name:ar": "القشلة",
+    "name:en": "Al Qashlah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 12829715546,
+  "lat": 26.3693403,
+  "lon": 50.1916408,
+  "tags": {
+    "name": "الراكة الشمالية",
+    "name:ar": "الراكة الشمالية",
+    "name:en": "Ar Rakah Ash Shamaliyah",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "way",
+  "id": 37363407,
+  "bounds": {
+    "minlat": 26.3138280,
+    "minlon": 50.1271875,
+    "maxlat": 26.3187749,
+    "maxlon": 50.1329554
+  },
+  "geometry": [
+    { "lat": 26.3162361, "lon": 50.1298140 },
+    { "lat": 26.3168362, "lon": 50.1314018 },
+    { "lat": 26.3170362, "lon": 50.1313417 },
+    { "lat": 26.3172670, "lon": 50.1313675 },
+    { "lat": 26.3176286, "lon": 50.1316507 },
+    { "lat": 26.3178902, "lon": 50.1323803 },
+    { "lat": 26.3169362, "lon": 50.1328266 },
+    { "lat": 26.3168285, "lon": 50.1325605 },
+    { "lat": 26.3159129, "lon": 50.1329554 },
+    { "lat": 26.3155975, "lon": 50.1328266 },
+    { "lat": 26.3153898, "lon": 50.1323202 },
+    { "lat": 26.3162668, "lon": 50.1318825 },
+    { "lat": 26.3158000, "lon": 50.1306721 },
+    { "lat": 26.3156975, "lon": 50.1304062 },
+    { "lat": 26.3156073, "lon": 50.1304467 },
+    { "lat": 26.3150282, "lon": 50.1307066 },
+    { "lat": 26.3149589, "lon": 50.1305349 },
+    { "lat": 26.3148589, "lon": 50.1304663 },
+    { "lat": 26.3146435, "lon": 50.1304491 },
+    { "lat": 26.3139049, "lon": 50.1288698 },
+    { "lat": 26.3138280, "lon": 50.1276682 },
+    { "lat": 26.3139665, "lon": 50.1273935 },
+    { "lat": 26.3141511, "lon": 50.1272047 },
+    { "lat": 26.3142973, "lon": 50.1271875 },
+    { "lat": 26.3148128, "lon": 50.1271961 },
+    { "lat": 26.3151359, "lon": 50.1272476 },
+    { "lat": 26.3159976, "lon": 50.1275824 },
+    { "lat": 26.3169670, "lon": 50.1277884 },
+    { "lat": 26.3175209, "lon": 50.1278828 },
+    { "lat": 26.3179056, "lon": 50.1279343 },
+    { "lat": 26.3181979, "lon": 50.1280115 },
+    { "lat": 26.3187749, "lon": 50.1283033 },
+    { "lat": 26.3186980, "lon": 50.1286123 },
+    { "lat": 26.3175440, "lon": 50.1291187 },
+    { "lat": 26.3169823, "lon": 50.1290758 },
+    { "lat": 26.3167823, "lon": 50.1293762 },
+    { "lat": 26.3162361, "lon": 50.1298140 }
+  ],
+  "tags": {
+    "name": "حي المنيرة",
+    "name:en": "Al-Munirah Camp",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "relation",
+  "id": 3667294,
+  "bounds": {
+    "minlat": 19.0005032,
+    "minlon": 44.6459902,
+    "maxlat": 29.1592544,
+    "maxlon": 55.6666851
+  },
+  "tags": {
+    "ISO3166-2": "SA-04",
+    "admin_level": "4",
+    "alt_name:cs": "Východní provincie",
+    "alt_name:ru": "Эш-Шаркия",
+    "boundary": "administrative",
+    "name": "المنطقة الشرقية",
+    "name:ar": "المنطقة الشرقية",
+    "name:arz": "المنطقه الشرقيه",
+    "name:azb": "دوغو اوستان",
+    "name:be": "Эш-Шаркія",
+    "name:be-tarask": "Эш-Шаркія",
+    "name:ceb": "Al Minţaqah ash Sharqīyah",
+    "name:cs": "aš-Šarkíja",
+    "name:de": "Provinz asch-Scharqiyya",
+    "name:el": "Ανατολική επαρχία",
+    "name:en": "Eastern Province",
+    "name:es": "Provincia Oriental",
+    "name:et": "Ash-Sharqīyah' provints",
+    "name:fa": "استان شرقی",
+    "name:fi": "Al-Šarqiyya",
+    "name:fr": "Ach-Charqiya",
+    "name:he": "מחוז א-שרקייה",
+    "name:hi": "पूर्वी प्रान्त",
+    "name:hr": "Istočna pokrajina",
+    "name:hu": "Keleti tartomány",
+    "name:id": "Syarqiyah",
+    "name:it": "Provincia di al-Sharqiyya",
+    "name:ja": "東部州",
+    "name:ka": "ეშ-შარკია",
+    "name:ko": "동부주",
+    "name:lt": "Rytų provincija",
+    "name:ml": "കിഴക്കൻ പ്രവിശ്യ (സൗദി അറേബ്യ)",
+    "name:ms": "Ash Syarqiyah",
+    "name:nan": "Tang-pō͘",
+    "name:nl": "Ash Sharqiyah",
+    "name:nn": "Austprovinsen",
+    "name:no": "Ash Sharqiyah",
+    "name:pl": "Prowincja Wschodnia",
+    "name:pt": "Oriental",
+    "name:ro": "Ash Sharqiyah",
+    "name:ru": "Восточный",
+    "name:sco": "Eastren Province",
+    "name:sr": "Источна провинција",
+    "name:su": "Propinsi",
+    "name:sv": "Ash Sharqiyah",
+    "name:tr": "Doğu Bölgesi",
+    "name:ug": "شەرقىيە ئۆلكىسى",
+    "name:uk": "Еш-Шаркія",
+    "name:ur": "الشرقيہ علاقہ",
+    "name:vec": "Oriental",
+    "name:vi": "Tỉnh Đông",
+    "name:vo": "Jarkiän",
+    "name:war": "Sinirangan nga Lalawigan",
+    "name:wuu": "东部省",
+    "name:zh": "东部省",
+    "place": "state",
+    "population": "5125254",
+    "population:date": "2022",
+    "source:population": "stats.gov.sa",
+    "type": "boundary",
+    "wikidata": "Q953508",
+    "wikipedia": "ar:المنطقة الشرقية (السعودية)"
+  }
+},
+{
+  "type": "relation",
+  "id": 12399708,
+  "bounds": {
+    "minlat": 26.0997703,
+    "minlon": 49.5899800,
+    "maxlat": 26.6968499,
+    "maxlon": 50.2406227
+  },
+  "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "محافظة الدمام",
+    "name:ar": "محافظة الدمام",
+    "name:en": "Dammam Governorate",
+    "place": "province",
+    "population": "903597",
+    "population:date": "2010",
+    "source": "covid19 saudi MOH open data",
+    "source:population": "stats.gov.sa",
+    "type": "boundary",
+    "wikidata": "Q97309170",
+    "wikipedia": "ar:الدمام (مقر الإمارة)"
+  }
+},
+{
+  "type": "relation",
+  "id": 12400302,
+  "bounds": {
+    "minlat": 26.0294854,
+    "minlon": 50.0744163,
+    "maxlat": 26.3713523,
+    "maxlon": 50.3244390
+  },
+  "tags": {
+    "admin_level": "6",
+    "boundary": "administrative",
+    "name": "محافظة الخبر",
+    "name:ar": "محافظة الخبر",
+    "name:en": "Khobar Governorate",
+    "place": "province",
+    "population": "578500",
+    "population:date": "2010",
+    "source": "covid19 saudi MOH open data",
+    "source:population": "stats.gov.sa",
+    "type": "boundary",
+    "wikidata": "Q97309474",
+    "wikipedia": "ar:محافظة الخبر"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120253,
+  "bounds": {
+    "minlat": 26.1757070,
+    "minlon": 50.1211840,
+    "maxlat": 26.2021202,
+    "maxlon": 50.1407470
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "المها",
+    "name:ar": "المها",
+    "name:en": "Al Maha",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120254,
+  "bounds": {
+    "minlat": 26.1947626,
+    "minlon": 50.1209786,
+    "maxlat": 26.2181846,
+    "maxlon": 50.1719646
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الشفاء",
+    "name:ar": "الشفاء",
+    "name:en": "Ash Shifa",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120257,
+  "bounds": {
+    "minlat": 26.1728860,
+    "minlon": 50.1364600,
+    "maxlat": 26.1995010,
+    "maxlon": 50.1664266
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الصواري",
+    "name:ar": "الصواري",
+    "name:en": "As Sawari",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120259,
+  "bounds": {
+    "minlat": 26.1953980,
+    "minlon": 50.1719646,
+    "maxlat": 26.2178620,
+    "maxlon": 50.1973900
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الخزامى",
+    "name:ar": "الخزامى",
+    "name:en": "Al Khuzama",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120261,
+  "bounds": {
+    "minlat": 26.2178620,
+    "minlon": 50.1945560,
+    "maxlat": 26.2356070,
+    "maxlon": 50.2138850
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الحمراء",
+    "name:ar": "الحمراء",
+    "name:en": "Al Hamra",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120258,
+  "bounds": {
+    "minlat": 26.1801861,
+    "minlon": 50.1683800,
+    "maxlat": 26.2105480,
+    "maxlon": 50.1918600
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "البحيرة",
+    "name:ar": "البحيرة",
+    "name:en": "Al Buhayrah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120262,
+  "bounds": {
+    "minlat": 26.2140310,
+    "minlon": 50.1719600,
+    "maxlat": 26.2424900,
+    "maxlon": 50.1965870
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "التعاون",
+    "name:ar": "التعاون",
+    "name:en": "At Taawun",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120260,
+  "bounds": {
+    "minlat": 26.2010660,
+    "minlon": 50.1957930,
+    "maxlat": 26.2193510,
+    "maxlon": 50.2133200
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الجسر",
+    "name:ar": "الجسر",
+    "name:en": "Al Jisr",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19394365,
+  "bounds": {
+    "minlat": 26.3057760,
+    "minlon": 50.0335986,
+    "maxlat": 26.3709810,
+    "maxlon": 50.1081500
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الشعلة",
+    "name:ar": "الشعلة",
+    "name:en": "Ash Shulah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19394371,
+  "bounds": {
+    "minlat": 26.3613904,
+    "minlon": 50.0620970,
+    "maxlat": 26.3881431,
+    "maxlon": 50.0930880
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الندى",
+    "name:ar": "الندى",
+    "name:en": "An Nada",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 20393884,
+  "bounds": {
+    "minlat": 26.2830060,
+    "minlon": 50.0923750,
+    "maxlat": 26.3406770,
+    "maxlon": 50.1536010
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "غرب الظهران",
+    "name:ar": "غرب الظهران",
+    "name:en": "Gharb Adh Dhahran",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 20393885,
+  "bounds": {
+    "minlat": 26.3339832,
+    "minlon": 50.1140590,
+    "maxlat": 26.3535870,
+    "maxlon": 50.1448949
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الجامعة",
+    "name:ar": "الجامعة",
+    "name:en": "Al Jamiah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19394413,
+  "bounds": {
+    "minlat": 26.3392757,
+    "minlon": 50.0302832,
+    "maxlat": 26.3748160,
+    "maxlon": 50.0718684
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "طيبة",
+    "name:ar": "طيبة",
+    "name:en": "Taibah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19394423,
+  "bounds": {
+    "minlat": 26.3549028,
+    "minlon": 50.0216100,
+    "maxlat": 26.3974628,
+    "maxlon": 50.0620970
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "المنار",
+    "name:ar": "المنار",
+    "name:en": "Al Manar",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19394384,
+  "bounds": {
+    "minlat": 26.3370380,
+    "minlon": 50.0930880,
+    "maxlat": 26.3754536,
+    "maxlon": 50.1294360
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "هجر",
+    "name:ar": "هجر",
+    "name:en": "Hajr",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19394407,
+  "bounds": {
+    "minlat": 26.3688690,
+    "minlon": 50.1214740,
+    "maxlat": 26.3862318,
+    "maxlon": 50.1401183
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "المنتزه",
+    "name:ar": "المنتزه",
+    "name:en": "Al Muntazah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120263,
+  "bounds": {
+    "minlat": 26.2338430,
+    "minlon": 50.1945300,
+    "maxlat": 26.2507770,
+    "maxlon": 50.2141860
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ابن سيناء",
+    "name:ar": "ابن سيناء",
+    "name:en": "Ibn Sina",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120264,
+  "bounds": {
+    "minlat": 26.2376750,
+    "minlon": 50.2113900,
+    "maxlat": 26.2511580,
+    "maxlon": 50.2155230
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "صناعية الفوازية",
+    "name:ar": "صناعية الفوازية",
+    "name:en": "Sinaiyah Al Fawaziyah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120265,
+  "bounds": {
+    "minlat": 26.2494070,
+    "minlon": 50.1913050,
+    "maxlat": 26.2633650,
+    "maxlon": 50.2047950
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "صناعية الثقبة",
+    "name:ar": "صناعية الثقبة",
+    "name:en": "Sinaiyah Ath Thuqbah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120266,
+  "bounds": {
+    "minlat": 26.2499700,
+    "minlon": 50.2028870,
+    "maxlat": 26.2663743,
+    "maxlon": 50.2154000
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الإسكان",
+    "name:ar": "الإسكان",
+    "name:en": "Al Iskan",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120267,
+  "bounds": {
+    "minlat": 26.2633650,
+    "minlon": 50.1970790,
+    "maxlat": 26.2838480,
+    "maxlon": 50.2178360
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الخبر الجنوبية",
+    "name:ar": "الخبر الجنوبية",
+    "name:en": "Al Khubar Al Janubiyah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120268,
+  "bounds": {
+    "minlat": 26.2586590,
+    "minlon": 50.1763340,
+    "maxlat": 26.2902560,
+    "maxlon": 50.2047950
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الثقبة",
+    "name:ar": "الثقبة",
+    "name:en": "Ath Thuqbah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120271,
+  "bounds": {
+    "minlat": 26.2816900,
+    "minlon": 50.1975800,
+    "maxlat": 26.3039380,
+    "maxlon": 50.2097570
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "مدينة العمال",
+    "name:ar": "مدينة العمال",
+    "name:en": "Madinat Al Ummal",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120272,
+  "bounds": {
+    "minlat": 26.2791330,
+    "minlon": 50.2048360,
+    "maxlat": 26.3026550,
+    "maxlon": 50.2221800
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الخبر الشمالية",
+    "name:ar": "الخبر الشمالية",
+    "name:en": "Al Khubar Ash Shamaliyah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120269,
+  "bounds": {
+    "minlat": 26.2862620,
+    "minlon": 50.1651835,
+    "maxlat": 26.3082270,
+    "maxlon": 50.1893830
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "العليا",
+    "name:ar": "العليا",
+    "name:en": "Al Olaya",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19617628,
+  "bounds": {
+    "minlat": 26.2901446,
+    "minlon": 50.1369859,
+    "maxlat": 26.3212728,
+    "maxlon": 50.1651835
+  },
+  "tags": {
+    "abbr_name": "KFUPM",
+    "admin_level": "10",
+    "amenity": "university",
+    "boundary": "administrative",
+    "name": "جامعة الملك فهد للبترول والمعادن",
+    "name:ar": "جامعة الملك فهد للبترول والمعادن",
+    "name:en": "King Fahd University of Petroleum and Minerals",
+    "short_name": "KFUPM",
+    "type": "boundary",
+    "website": "https://www.kfupm.edu.sa/",
+    "wikidata": "Q4116241",
+    "wikipedia": "en:King Fahd University of Petroleum and Minerals"
+  }
+},
+{
+  "type": "relation",
+  "id": 20393881,
+  "bounds": {
+    "minlat": 26.2980416,
+    "minlon": 50.1528599,
+    "maxlat": 26.3346723,
+    "maxlon": 50.1795500
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الدوحة الجنوبية",
+    "name:ar": "الدوحة الجنوبية",
+    "name:en": "Ad Dawhah Al Janubiyah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 20393882,
+  "bounds": {
+    "minlat": 26.3170801,
+    "minlon": 50.1415988,
+    "maxlat": 26.3338262,
+    "maxlon": 50.1554565
+  },
+  "tags": {
+    "admin_level": "10",
+    "alt_name:en": "South Dana",
+    "boundary": "administrative",
+    "name": "الدانة الجنوبية",
+    "name:ar": "الدانة الجنوبية",
+    "name:en": "Ad Danah Al Janubiyah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 20393883,
+  "bounds": {
+    "minlat": 26.3285323,
+    "minlon": 50.1325043,
+    "maxlat": 26.3454571,
+    "maxlon": 50.1543903
+  },
+  "tags": {
+    "admin_level": "10",
+    "alt_name:en": "North Dana",
+    "boundary": "administrative",
+    "name": "الدانة الشمالية",
+    "name:ar": "الدانة الشمالية",
+    "name:en": "Ad Danah Ash Shamaliyah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 20393887,
+  "bounds": {
+    "minlat": 26.3295472,
+    "minlon": 50.1534436,
+    "maxlat": 26.3446212,
+    "maxlon": 50.1791460
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الدوحة الشمالية",
+    "name:ar": "الدوحة الشمالية",
+    "name:en": "Ad Dawhah Ash Shamaliyah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120270,
+  "bounds": {
+    "minlat": 26.2838480,
+    "minlon": 50.1835330,
+    "maxlat": 26.3066600,
+    "maxlon": 50.2017130
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "العقربية",
+    "name:ar": "العقربية",
+    "name:en": "Al Aqrabiyah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120273,
+  "bounds": {
+    "minlat": 26.3005810,
+    "minlon": 50.2156124,
+    "maxlat": 26.3231266,
+    "maxlon": 50.2239180
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "اليرموك",
+    "name:ar": "اليرموك",
+    "name:en": "Al Yarmok",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120274,
+  "bounds": {
+    "minlat": 26.3026550,
+    "minlon": 50.1900390,
+    "maxlat": 26.3131420,
+    "maxlon": 50.2111220
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الحزام الأخضر",
+    "name:ar": "الحزام الأخضر",
+    "name:en": "Al Hizam Al Akhdar",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120275,
+  "bounds": {
+    "minlat": 26.3058770,
+    "minlon": 50.1758230,
+    "maxlat": 26.3150370,
+    "maxlon": 50.1914550
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الهدا",
+    "name:ar": "الهدا",
+    "name:en": "Al Hada",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120276,
+  "bounds": {
+    "minlat": 26.3014120,
+    "minlon": 50.2097570,
+    "maxlat": 26.3177090,
+    "maxlon": 50.2176390
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "البندرية",
+    "name:ar": "البندرية",
+    "name:en": "Al Bandariyah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120277,
+  "bounds": {
+    "minlat": 26.3171060,
+    "minlon": 50.2059930,
+    "maxlat": 26.3268360,
+    "maxlon": 50.2166780
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "البستان",
+    "name:ar": "البستان",
+    "name:en": "Al Bustan",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120278,
+  "bounds": {
+    "minlat": 26.3098910,
+    "minlon": 50.1895170,
+    "maxlat": 26.3251160,
+    "maxlon": 50.2115770
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الحزام الذهبي",
+    "name:ar": "الحزام الذهبي",
+    "name:en": "Al Hizam Adh Dhahabi",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120279,
+  "bounds": {
+    "minlat": 26.3131420,
+    "minlon": 50.1791460,
+    "maxlat": 26.3343020,
+    "maxlon": 50.1915110
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الأندلس",
+    "name:ar": "الأندلس",
+    "name:en": "Al Andalus",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120280,
+  "bounds": {
+    "minlat": 26.3217770,
+    "minlon": 50.1881860,
+    "maxlat": 26.3366600,
+    "maxlon": 50.2059930
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الجوهرة",
+    "name:ar": "الجوهرة",
+    "name:en": "Al Jawharah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120281,
+  "bounds": {
+    "minlat": 26.3251160,
+    "minlon": 50.1998650,
+    "maxlat": 26.3389200,
+    "maxlon": 50.2147490
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الروابي",
+    "name:ar": "الروابي",
+    "name:en": "Ar Rawabi",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120282,
+  "bounds": {
+    "minlat": 26.3326460,
+    "minlon": 50.1787880,
+    "maxlat": 26.3542610,
+    "maxlon": 50.1998650
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "قرطبة",
+    "name:ar": "قرطبة",
+    "name:en": "Qurtubah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19394403,
+  "bounds": {
+    "minlat": 26.3535870,
+    "minlon": 50.1243390,
+    "maxlat": 26.3732620,
+    "maxlon": 50.1464980
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "قصر الخليج",
+    "name:ar": "قصر الخليج",
+    "name:en": "Qasr Al Khalij",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19394421,
+  "bounds": {
+    "minlat": 26.3648670,
+    "minlon": 50.1332056,
+    "maxlat": 26.3911110,
+    "maxlon": 50.1496760
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "النهضة",
+    "name:ar": "النهضة",
+    "name:en": "An Nahdah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 20393886,
+  "bounds": {
+    "minlat": 26.3359053,
+    "minlon": 50.1366640,
+    "maxlat": 26.3622630,
+    "maxlon": 50.1654785
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "القصور",
+    "name:ar": "القصور",
+    "name:en": "Al Qusur",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 20393888,
+  "bounds": {
+    "minlat": 26.3376434,
+    "minlon": 50.1451100,
+    "maxlat": 26.3941570,
+    "maxlon": 50.1790516
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الحرس الوطني",
+    "name:ar": "الحرس الوطني",
+    "name:en": "Al Haras Al Watani",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 20393889,
+  "bounds": {
+    "minlat": 26.3584135,
+    "minlon": 50.1673186,
+    "maxlat": 26.3770620,
+    "maxlon": 50.1785357
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "القشلة",
+    "name:ar": "القشلة",
+    "name:en": "Al Qashlah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19394391,
+  "bounds": {
+    "minlat": 26.3488920,
+    "minlon": 50.1271950,
+    "maxlat": 26.3608580,
+    "maxlon": 50.1366640
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "تهامة",
+    "name:ar": "تهامة",
+    "name:en": "Tihamah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120283,
+  "bounds": {
+    "minlat": 26.3486460,
+    "minlon": 50.1782240,
+    "maxlat": 26.3706800,
+    "maxlon": 50.1904820
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "المدينة الرياضية",
+    "name:ar": "المدينة الرياضية",
+    "name:en": "Sports City",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120284,
+  "bounds": {
+    "minlat": 26.3366600,
+    "minlon": 50.1880670,
+    "maxlat": 26.3667130,
+    "maxlon": 50.2116510
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الراكة الجنوبية",
+    "name:ar": "الراكة الجنوبية",
+    "name:en": "Ar Rakah Al Janubiyah",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19120285,
+  "bounds": {
+    "minlat": 26.3588320,
+    "minlon": 50.1781330,
+    "maxlat": 26.3801820,
+    "maxlon": 50.2054880
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "الراكة الشمالية",
+    "name:ar": "الراكة الشمالية",
+    "name:en": "Ar Rakah Ash Shamaliyah",
+    "type": "boundary"
+  }
+}
 
-</body>
-</html>
+  ]
+}

@@ -1040,9 +1040,13 @@ function nearStreets(ll,r){return streets.filter(s=>s.found).map(s=>({s,d:dLines
 let radius=1000;
 /* ===== لوحة التفاصيل ===== */
 const chip=(k,id,ic,label,d,col)=>`<button type="button" class="nb" data-go="${k}|${esc(id)}" style="--c:${col}"><i>${ic}</i>${esc(label)}${d!=null?`<small>${fmtD(d)}</small>`:''}</button>`;
-function detSite(s){const ns=nearStreets([+s.lat,+s.lng],600);
+function nearInter(ll,r){const out=[],seen=new Set();for(const st of streets){if(!st.found)continue;for(const x of st.inter||[]){const d=dPt(ll,[x[1],x[2]]);if(d>r)continue;const k=x[0]+'|'+x[1]+'|'+x[2];if(seen.has(k))continue;seen.add(k);out.push({x,st,d})}}return out.sort((a,b)=>a.d-b.d)}
+function detSite(s){const ll=hasXY(s)?[+s.lat,+s.lng]:null,ns=ll?nearStreets(ll,radius):[],ni=ll?nearInter(ll,radius):[],nb=ll?sites.filter(o=>o.id!==s.id&&hasXY(o)).map(o=>({x:o,d:dPt(ll,[+o.lat,+o.lng])})).filter(o=>o.d<=radius).sort((a,b)=>a.d-b.d):[];
  return `<div class="t"><div style="flex:1;min-width:0"><h2>${META[s.type][0]} ${esc(s.name)}</h2><p>${META[s.type][1]} · ${esc(s.city)}${s.district?' · '+esc(s.district):''}</p>${warnOf(s)?`<span class="warn">${warnOf(s)}</span>`:''}</div><button class="x" data-x aria-label="إغلاق">×</button></div>
- ${hasXY(s)&&ns.length?`<div class="near"><h4>بالقرب منه</h4><div class="nbs">${ns.map(o=>chip('street',o.s.code,'🛣️',o.s.name,o.d,RANK[o.s.rank][1])).join('')}</div></div>`:''}
+ ${ll?`<div class="near"><h4>القرب <select id="rad" aria-label="نطاق القرب">${[500,1000,2000].map(v=>`<option value="${v}"${v===radius?' selected':''}>ضمن ${fmtD(v)}</option>`).join('')}</select></h4></div>
+ <div class="near"><h4>الشوارع القريبة</h4>${ns.length?`<div class="nbs">${ns.map(o=>chip('street',o.s.code,'🛣️',o.s.name,o.d,RANK[o.s.rank][1])).join('')}</div>`:'<p class="muted">لا توجد شوارع ضمن هذا النطاق.</p>'}</div>
+ <div class="near"><h4>تقاطعات الشوارع القريبة</h4>${ni.length?`<div class="nbs">${ni.slice(0,12).map(o=>`<button type="button" class="nb ix2" data-fly="${o.x[1]},${o.x[2]}">${esc(o.x[0])} × ${esc(o.st.name)}<small>${fmtD(o.d)}</small></button>`).join('')}</div>`:'<p class="muted">لا توجد تقاطعات موثّقة ضمن هذا النطاق.</p>'}</div>
+ <div class="near"><h4>المواقع القريبة</h4>${nb.length?`<div class="nbs">${nb.map(o=>chip('site',o.x.id,META[o.x.type][0],o.x.name,o.d,TCOL[o.x.type])).join('')}</div>`:'<p class="muted">لا توجد مدارس أو مجمعات أخرى ضمن هذا النطاق.</p>'}</div>`:''}
  <a class="big" href="${esc(googleUrl(s))}" target="_blank" rel="noopener noreferrer">↗ فتح في خرائط Google</a>${ADMIN?`<button type="button" class="admedit" data-admedit="${esc(s.id)}">✎ تعديل (إدارة)</button>`:''}`}
 function detStreet(s){const ns=nearSites(s,radius),e=stEnds(s);
  return `<div class="t"><div style="flex:1;min-width:0"><h2>🛣️ ${esc(s.name)}</h2><p>${esc(s.city)} · ${esc(s.district)}${s.alias?' · '+esc(s.alias):''}</p>${s.found?'':'<span class="warn">⚠ لا يتوفر مسار على الخريطة — يعمل رابط Google</span>'}</div><button class="x" data-x aria-label="إغلاق">×</button></div>

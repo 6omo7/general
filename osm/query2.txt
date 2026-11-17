@@ -1,0 +1,8 @@
+[out:json][timeout:200];
+(
+ relation["boundary"="administrative"](26.18,50.05,26.37,50.25);
+ relation["place"~"neighbourhood|suburb|quarter"](26.18,50.05,26.37,50.25);
+ way["place"~"neighbourhood|suburb|quarter"](26.18,50.05,26.37,50.25);
+ node["place"~"neighbourhood|suburb|quarter|city|town"](26.18,50.05,26.37,50.25);
+);
+out tags geom qt;

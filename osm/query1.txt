@@ -1,0 +1,5 @@
+[out:json][timeout:240];
+(
+ way["highway"]["highway"!~"footway|path|steps|service|track|cycleway|pedestrian|construction|proposed"](26.18,50.05,26.37,50.25);
+);
+out tags geom qt;

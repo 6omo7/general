@@ -68,9 +68,17 @@ async function ghPut(path,text,msg,c){const api=`https://api.github.com/repos/${
  const p=await fetch(api,{method:'PUT',headers:Object.assign({'Content-Type':'application/json'},H),body:JSON.stringify(body)});
  if(!p.ok){let t='';try{t=(await p.json()).message}catch(e){}throw new Error('تعذّر الكتابة في GitHub ('+p.status+')'+(t?': '+t:''))}}
 function allInvalid(){const out=[];for(const r of DATA.records){if(r.status!=='approved')continue;const e=validate(r);if(e.length)out.push(r.name+': '+e[0])}return out}
+async function remoteRev(c){const api=`https://api.github.com/repos/${c.owner}/${c.repo}/contents/${(c.dir?c.dir.replace(/^\/|\/$/g,'')+'/':'')}data.admin.enc?ref=${encodeURIComponent(c.branch)}`;
+ const g=await fetch(api,{headers:{Authorization:'Bearer '+c.token,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'},cache:'no-store'});
+ if(g.status===404)return 0;if(!g.ok)throw new Error('تعذّر قراءة الملف المنشور للتحقق من التعارض ('+g.status+')');
+ const f=await g.json();const P=JSON.parse(atob(f.content.replace(/\n/g,'')));const b=x=>Uint8Array.from(atob(x),ch=>ch.charCodeAt(0));
+ const km=await crypto.subtle.importKey('raw',new TextEncoder().encode(ctx.adminPw),'PBKDF2',false,['deriveKey']);
+ const key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b(P.s),iterations:P.i,hash:'SHA-256'},km,{name:'AES-GCM',length:256},false,['decrypt']);
+ const d=JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({name:'AES-GCM',iv:b(P.v)},key,b(P.c))));return d.rev||0}
 async function publish(onStep,cfg){const c=cfg||ghCfg();if(!c.token)throw new Error('أدخل رمز GitHub أولاً.');if(!c.owner||!c.repo)throw new Error('بيانات المستودع غير مكتملة.');
  const bad=allInvalid();if(bad.length)throw new Error('سجلات معتمدة غير صالحة:\n'+bad.slice(0,5).join('\n'));
  if(!DATA.settings.pubPw||DATA.settings.pubPw.length<6)throw new Error('كلمة مرور الاطلاع العامة غير مضبوطة.');
+ onStep&&onStep('التحقق من عدم وجود نسخة أحدث…');const rr=await remoteRev(c);if(rr>(ctx.baseRev||0))throw new Error('يوجد نشر أحدث (r'+rr+') من جهاز آخر، ونسختك الحالية (r'+(ctx.baseRev||0)+') أقدم. لم يُنشر شيء. احفظ نسختك من «تنزيل نسخة كاملة (JSON)» ثم أعد فتح الصفحة لتحميل الأحدث.');
  const dir=c.dir?c.dir.replace(/^\/|\/$/g,'')+'/':'';snap('قبل النشر');
  const prev=DATA.rev;DATA.rev=prev+1;DATA.updated=nowIso();logIt({id:'-',kind:'site',name:'البيانات'},'publish',[['rev',String(prev),String(DATA.rev)]]);
  try{onStep&&onStep('تشفير الملفين…');const pub=await encrypt(pubData(),DATA.settings.pubPw),adm=await encrypt(DATA,ctx.adminPw);
